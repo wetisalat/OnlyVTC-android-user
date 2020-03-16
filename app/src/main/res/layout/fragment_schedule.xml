@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.onlyvtc.ui.fragment.schedule.ScheduleFragment">
+
+    <LinearLayout
+        android:id="@+id/repeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/clanpro_medium"
+            android:padding="16dp"
+            android:text="@string/repeat"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_18" />
+
+        <TextView
+            android:id="@+id/tvRepeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/clanpro_medium"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="16dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="16dp"
+            android:text="@string/never"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/clanpro_medium"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/schedule_a_ride"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_18" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="@string/choose_a_date"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/text_18" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="@string/choose_a_time"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/text_18" />
+
+    <Button
+        android:id="@+id/schedule_request"
+        style="@style/MyButton.Primary"
+        android:text="@string/schedule_request" />
+
+</LinearLayout>

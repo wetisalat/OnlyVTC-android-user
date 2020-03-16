@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "261411259548",
+    "firebase_url": "https://onlyvtc-93d55.firebaseio.com",
+    "project_id": "onlyvtc-93d55",
+    "storage_bucket": "onlyvtc-93d55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261411259548:android:91ffe82ceaf95e95",
+        "android_client_info": {
+          "package_name": "com.onlyvtc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261411259548-jphaa236dcd3npaatjeg7nl6gl1ecj8c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onlyvtc",
+            "certificate_hash": "d4c1d69ebb5ae9d0329ae4b1a495f2eb452b9067"
+          }
+        },
+        {
+          "client_id": "261411259548-335i7fq3m4rev0b7d784ig0v6dv7go6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbVvlwc7AwBKBbMylSI5aMcYPRzjk1Fxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261411259548-335i7fq3m4rev0b7d784ig0v6dv7go6f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "261411259548-rjgau1fj9heg14l0ic32orvoqniuofl1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.onlyvtc.driver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261411259548:android:a168046e4dfb3203",
+        "android_client_info": {
+          "package_name": "com.onlyvtc.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261411259548-v6cf5rpng7sf9m7b7i7gi3hlnshc62m1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onlyvtc.driver",
+            "certificate_hash": "d4c1d69ebb5ae9d0329ae4b1a495f2eb452b9067"
+          }
+        },
+        {
+          "client_id": "261411259548-335i7fq3m4rev0b7d784ig0v6dv7go6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbVvlwc7AwBKBbMylSI5aMcYPRzjk1Fxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261411259548-335i7fq3m4rev0b7d784ig0v6dv7go6f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "261411259548-rjgau1fj9heg14l0ic32orvoqniuofl1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.onlyvtc.driver"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
