@@ -381,7 +381,7 @@ public class RegisterActivity extends BaseActivity implements RegisterIView {
             Country country = new Country(countryCode, countryName, countryDialCode, countryFlag);
             setUserCountryInfo(country);
 
-            SharedHelper.putKey(RegisterActivity.this, "countryCode", "+" + countryCode);
+            SharedHelper.putKey(RegisterActivity.this, "countryCode", countryDialCode);
             SharedHelper.putKey(RegisterActivity.this, "mobile", phoneNumber.getText().toString());
             register();
         }

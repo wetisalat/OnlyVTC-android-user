@@ -120,37 +120,37 @@ public class SplashActivity extends BaseActivity implements SplashIView, GoogleA
             presenter.services();
     }
 
-    private void checkUserAppInstalled() {
-        if (isPackageExisted(SplashActivity.this))
-            showWarningAlert(getString(R.string.user_provider_app_warning));
-        else redirectionToHome();
-    }
+//    private void checkUserAppInstalled() {
+//        if (isPackageExisted(SplashActivity.this))
+//            showWarningAlert(getString(R.string.user_provider_app_warning));
+//        else redirectionToHome();
+//    }
 
-    private boolean isPackageExisted(Context context) {
-        PackageManager pm = context.getPackageManager();
-        try {
-            pm.getPackageInfo(BuildConfig.DRIVER_PACKAGE, PackageManager.GET_META_DATA);
-        } catch (PackageManager.NameNotFoundException e) {
-            return false;
-        }
-        return true;
-    }
+//    private boolean isPackageExisted(Context context) {
+//        PackageManager pm = context.getPackageManager();
+//        try {
+//            pm.getPackageInfo(BuildConfig.DRIVER_PACKAGE, PackageManager.GET_META_DATA);
+//        } catch (PackageManager.NameNotFoundException e) {
+//            return false;
+//        }
+//        return true;
+//    }
 
-    private void showWarningAlert(String message) {
-        try {
-            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SplashActivity.this);
-            alertDialogBuilder
-                    .setTitle(getResources().getString(R.string.warning))
-                    .setMessage(message)
-                    .setCancelable(false)
-                    .setPositiveButton(getResources().getString(R.string.continue_app),
-                            (dialog, id) -> redirectionToHome());
-            AlertDialog alertDialog = alertDialogBuilder.create();
-            alertDialog.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    private void showWarningAlert(String message) {
+//        try {
+//            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SplashActivity.this);
+//            alertDialogBuilder
+//                    .setTitle(getResources().getString(R.string.warning))
+//                    .setMessage(message)
+//                    .setCancelable(false)
+//                    .setPositiveButton(getResources().getString(R.string.continue_app),
+//                            (dialog, id) -> redirectionToHome());
+//            AlertDialog alertDialog = alertDialogBuilder.create();
+//            alertDialog.show();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     private void redirectionToHome() {
         if (SharedHelper.getBoolKey(SplashActivity.this, "logged_in", false))
@@ -198,7 +198,8 @@ public class SplashActivity extends BaseActivity implements SplashIView, GoogleA
                 Log.d("Loggedin", String.valueOf(SharedHelper.getBoolKey(SplashActivity.this, "logged_in", false)));
                 String device_token = String.valueOf(SharedHelper.getKey(SplashActivity.this, "device_token"));
                 Log.d("device_token", device_token);
-                checkUserAppInstalled();
+//                checkUserAppInstalled();
+                redirectionToHome();
             }, 5000);
             else showAlertDialog(version.getUrl());
 
